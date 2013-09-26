@@ -16,25 +16,26 @@
             <fieldset>
                 <legend>Fråga</legend>
                 <label for="form_select">Ärendetyp</label>
-                <select id="form_select">
+                <select name="form_reason" id="form_select">
                     <option>Fråga</option>
                     <option>Kärleksförklaring</option>
                 </select>
                 <br>
                 <label for="form_text">Rubrik:</label>
-                <input id="form_text" type="text">
+                <input name="form_subject" id="form_text" type="text">
                 <br>
                 <label for="form_textarea">Fråga:</label>
-                <textarea id="form_textarea"></textarea>
+                <textarea name="form_textarea" id="form_textarea"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Information om dig</legend>
                 <label for="form_mail">Kontakta mig via mail</label>
-                <input id="form_mail" name="contact_options" value="mail" type="checkbox">
+                <input id="form_mail" name="contact_options[]" value="mail" type="checkbox">
                 <br>
                 <label for="form_phone">Kontakta mig via telefon</label>
-                <input id="form_phone" name="contact_options" value="phone" type="checkbox">
+                <input id="form_phone" name="contact_options[]" value="phone" type="checkbox">
             </fieldset>
+            <input type="submit">
         </form>
     </body>
 </html>
