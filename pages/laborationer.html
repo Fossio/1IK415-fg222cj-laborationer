@@ -3,118 +3,130 @@
     <head>
         <meta charset="utf-8">
         <title>Laborationer - Fabian Gillholm</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h1>Min laborationsportal</h1>
-        <p>Fabbe-labbar</p>
-        <ul>
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="laborationer.html">Laborationer</a></li>
-            <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <h2>Webbteknisk introduktion</h2>
-        <ul>
-            <li><a href="#web_laboration1">Laboration 1</a></li>
-            <li><a href="#web_laboration2">Laboration 2</a></li>
-        </ul>
-        <h3>Resultat</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <td>Laboration</td>
-                    <td>Uppgift</td>
-                    <td>Status</td>
-                    <td>Redovisad</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3">1</td>
-                    <td>1</td>
-                    <td>Färdig</td>
-                    <td>2013-09-20</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Färdig</td>
-                    <td>2013-09-20</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Färdig</td>
-                    <td>2013-09-20</td>
-                </tr>
-                <tr>
-                    <td rowspan="6">2</td>
-                    <td>1</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Ej påbörjad</td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">Laborationsresultat gällande Fabian Gillholm.</td>
-                </tr>
-            </tfoot>
-        </table>
-        <h3 id="web_laboration1">Laboration 1</h3>
-        <p>Uppgifter:</p>
-        <ol>
-            <li>www-katalog. Check</li>
-            <li><a href="../index.html">Ett första dokument</a></li>
-            <li><a href="presentation.html#bild_fabian">Presentationsbild</a></li>
-            <li><a href="../pics/BadlyDrawnPig.png">Tuff bild</a></li>
-            <li><a href="../index.html#blog_En_cool_bild">Blogginlägg Bild</a></li>
-            <li><a href="../index.html#blog_En_cool_film">Blogginlägg Film</a></li>
-        </ol>
-        <h3 id="web_laboration2">Laboration 2</h3>
-        <p>Uppgifter:</p>
-        <ol>
-        <li>Absoluta och relativa sökvägar
-        <dl>
-            <dt>Vilken är den absoluta sökvägen till filen bottom.html?</dt>
-            <dd>http://www.server.se/html/pages/bottom.html</dd>
-            <dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-            <dd>pages/top.html</dd>
-            <dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
-            <dd>../../index.html</dd>
-            <dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
-            <dd>http://www.server.se/index.html <strong>ELLER</strong> http://www.server.se/ om webservern är normalt konfigurerad.</dd>
-            <dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-            <dd>bottom.html</dd>
-            <dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
-            <dd>html/pages/top.html</dd>
-        </dl>
-        </li>
-        <li>Länkar och listor</li>
-        <li>Bilder</li>
-        <li>Video</li>
-        </ol>
+        <div id="wrapper">
+            <div id="header">
+            <h1>Min laborationsportal</h1>
+            <p>Fabbe-labbar</p>
+            </div>
+            <div id="leftNavigation">
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="laborationer.html" class="active">Laborationer</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h2>Webbteknisk introduktion</h2>
+                <ul>
+                    <li><a href="#web_laboration1">Laboration 1</a></li>
+                    <li><a href="#web_laboration2">Laboration 2</a></li>
+                </ul>
+                <h3>Resultat</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Laboration</td>
+                            <td>Uppgift</td>
+                            <td>Status</td>
+                            <td>Redovisad</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td>1</td>
+                            <td>Färdig</td>
+                            <td>2013-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Färdig</td>
+                            <td>2013-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Färdig</td>
+                            <td>2013-09-20</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">2</td>
+                            <td>1</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ej påbörjad</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Laborationsresultat gällande Fabian Gillholm.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <h3 id="web_laboration1">Laboration 1</h3>
+                <p>Uppgifter:</p>
+                <ol>
+                    <li>www-katalog. Check</li>
+                    <li><a href="../index.html">Ett första dokument</a></li>
+                    <li><a href="presentation.html#bild_fabian">Presentationsbild</a></li>
+                    <li><a href="../pics/BadlyDrawnPig.png">Tuff bild</a></li>
+                    <li><a href="../index.html#blog_En_cool_bild">Blogginlägg Bild</a></li>
+                    <li><a href="../index.html#blog_En_cool_film">Blogginlägg Film</a></li>
+                </ol>
+                <h3 id="web_laboration2">Laboration 2</h3>
+                <p>Uppgifter:</p>
+                <ol>
+                <li>Absoluta och relativa sökvägar
+                <dl>
+                    <dt>Vilken är den absoluta sökvägen till filen bottom.html?</dt>
+                    <dd>http://www.server.se/html/pages/bottom.html</dd>
+                    <dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
+                    <dd>pages/top.html</dd>
+                    <dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
+                    <dd>../../index.html</dd>
+                    <dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
+                    <dd>http://www.server.se/index.html <strong>ELLER</strong> http://www.server.se/ om webservern är normalt konfigurerad.</dd>
+                    <dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
+                    <dd>bottom.html</dd>
+                    <dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
+                    <dd>html/pages/top.html</dd>
+                </dl>
+                </li>
+                <li>Länkar och listor</li>
+                <li>Bilder</li>
+                <li>Video</li>
+                </ol>
+            </div>
+            <div id="footer">
+                <p>Ansvarig för innehållet på denna sida är Fabian Gillholm</p>
+            </div>
+        </div>
     </body>
 </html>

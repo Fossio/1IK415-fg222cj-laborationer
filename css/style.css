@@ -79,19 +79,26 @@ table {
 
 #footer {
     width:1000px;
+    height:50px;
     border:1px solid black;
     vertical-align:bottom;
     float:left;
+    background-color:#E8C053;
 }
 
 
 ul li a{
     background-color:#7DFF68;
+    text-indent:5px;
     line-height:2;
     text-decoration:none;
     display:block;
 }
 
 ul li a:hover{
+    background-color:#D1FF68;
+}
+
+.active {
     background-color:#D1FF68;
 }
