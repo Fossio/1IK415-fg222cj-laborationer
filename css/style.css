@@ -53,6 +53,9 @@ table {
 	border-spacing: 0;
 }
 
+/* End of reset */
+
+
 a {
     text-decoration:none;
 }
@@ -63,6 +66,7 @@ a:visited {
 
 a:hover {
     color:#5A5AFF;
+    text-decoration:underline;
 }
 
 a, p, dt, dd, li, td, label {
@@ -71,6 +75,16 @@ a, p, dt, dd, li, td, label {
 
 p {
     margin: 8px 0;
+}
+
+h1 {
+    position:relative;
+    top:50px;
+    font:bold 24px Georgia;
+}
+
+h2 {
+    font:bold 22px Georgia;
 }
 
 h3, legend {
@@ -92,6 +106,17 @@ dt {
 
 dd {
     text-indent:30px;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+td {
+    border:1px solid black;
+    padding:5px;
+}
+
+thead {
+    border:2px solid black;
 }
 
 #wrapper {
@@ -102,16 +127,9 @@ dd {
 #header {
     width:1000px;
     height:219px;
-    border:1px solid black;
     text-align:center;
     text-transform:uppercase;
-    background-image:url('../pics/BadlyDrawnPigExtended.png');
-}
-
-#header h1 {
-    position:relative;
-    top:50px;
-    font:bold 24px Georgia;
+    background-image:url('pics/BadlyDrawnPigExtended.png');
 }
 
 #header h1 strong {
@@ -125,8 +143,9 @@ dd {
 
 #leftNavigation {
     float:left;
+    background-color:#7DFF68;
+    height:100%;
     width:19%;
-    border:1px solid red;
 }
 
 #leftNavigation ul li a{
@@ -141,16 +160,15 @@ dd {
 }
 
 #main {
+    padding:10px;
     float:right;
     width:79%;
-    border:1px solid green;
     background-color:#C7E8FF;
 }
 
 #footer {
     width:1000px;
     height:50px;
-    border:1px solid black;
     text-align:center;
     vertical-align:bottom;
     float:left;
@@ -159,7 +177,14 @@ dd {
 
 #footer p {
     position:relative;
-    top:10px;
+    top:8px;
+}
+
+.blog-heading {
+    background-image:url('pics/scroll.png'); /* This image is used with permission. The rights to this image belong to Everaldo Coelho - http://www.everaldo.com/ */
+    background-repeat:no-repeat;
+    background-position:left center;
+    text-indent:28px;
 }
 
 .active {
@@ -167,5 +192,18 @@ dd {
 }
 
 .signature {
+    font-style:italic;
+    margin:20px;
+}
+
+.right {
     float:right;
+}
+
+.left {
+    float: left;
+}
+
+.image-border {
+    border: 3px solid white;
 }
