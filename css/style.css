@@ -56,6 +56,8 @@ table {
 /* End of reset */
 
 
+/* Länkar */
+
 a {
     text-decoration:none;
 }
@@ -69,6 +71,8 @@ a:hover {
     text-decoration:underline;
 }
 
+/* Allmänt */
+
 a, p, dt, dd, li, td, label {
     font:16px "Trebuchet MS";
 }
@@ -77,6 +81,7 @@ p {
     margin: 8px 0;
 }
 
+/* Rubriker */
 h1 {
     position:relative;
     top:50px;
@@ -90,10 +95,6 @@ h2 {
 h3, legend {
     font:22px Georgia;
     line-height:2;
-}
-
-thead {
-    font-size:19px;
 }
 
 ol li {
@@ -110,14 +111,27 @@ dd {
     margin-bottom:10px;
 }
 
+/* Tabeller */
+
 td {
-    border:1px solid black;
     padding:5px;
 }
 
-thead {
+tbody td {
+    border:1px solid black;
+}
+
+thead td {
     border:2px solid black;
 }
+
+tfoot td {
+    font-style:italic;
+}
+
+
+/* Divar */
+
 
 #wrapper {
     width:1000px;
