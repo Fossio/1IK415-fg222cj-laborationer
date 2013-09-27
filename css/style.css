@@ -53,6 +53,23 @@ table {
 	border-spacing: 0;
 }
 
+a {
+    text-decoration:none;
+}
+
+a:visited {
+    color:#0000FF;
+}
+
+a, p, dt, dd, li, td {
+    font:16px "Trebuchet MS";
+}
+
+h3 {
+    font:22px Georgia;
+    line-height:2;
+}
+
 #wrapper {
     width:1000px;
     margin:0 auto;
@@ -60,14 +77,43 @@ table {
 
 #header {
     width:1000px;
+    height:219px;
     border:1px solid black;
-    vertical-align:top;
+    text-align:center;
+    text-transform:uppercase;
+    background-image:url('../pics/BadlyDrawnPigExtended.png');
+}
+
+#header h1 {
+    position:relative;
+    top:50px;
+    font:bold 28px Georgia;
+}
+
+#header h1 strong {
+    font-size:36px;
+}
+
+#header p {
+    position:relative;
+    top:50px;
 }
 
 #leftNavigation {
     float:left;
     width:19%;
     border:1px solid red;
+}
+
+#leftNavigation ul li a{
+    background-color:#7DFF68;
+    text-indent:5px;
+    line-height:2;
+    display:block;
+}
+
+#leftNavigation ul li a:hover{
+    background-color:#D1FF68;
 }
 
 #main {
@@ -81,24 +127,21 @@ table {
     width:1000px;
     height:50px;
     border:1px solid black;
+    text-align:center;
     vertical-align:bottom;
     float:left;
     background-color:#E8C053;
 }
 
-
-ul li a{
-    background-color:#7DFF68;
-    text-indent:5px;
-    line-height:2;
-    text-decoration:none;
-    display:block;
-}
-
-ul li a:hover{
-    background-color:#D1FF68;
+#footer p {
+    position:relative;
+    top:10px;
 }
 
 .active {
     background-color:#D1FF68;
+}
+
+.signature {
+    float:right;
 }
