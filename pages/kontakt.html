@@ -3,50 +3,51 @@
     <head>
         <meta charset="utf-8">
         <title>Kontakt - Fabian Gillholm</title>
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="../css/print.css" rel="stylesheet" type="text/css" media="print">
     </head>
     <body>
-    <div class="wrapper">
-        <div class="header">
-        <h1>Kontakt</h1>
-        </div>
-        <div class="leftNavigation">
-        <ul>
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="laborationer.html">Laborationer</a></li>
-            <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html" id="active">Kontakt</a></li>
-        </ul>
-        </div>
-        <div class="main">
-        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-            <fieldset>
-                <legend>Fråga</legend>
-                <label for="form_select">Ärendetyp</label>
-                <select name="form_reason" id="form_select">
-                    <option>Fråga</option>
-                    <option>Kärleksförklaring</option>
-                </select>
-                <br>
-                <label for="form_text">Rubrik</label>
-                <input name="form_subject" id="form_text" type="text">
-                <br>
-                <label for="form_textarea">Fråga</label>
-                <textarea name="form_textarea" id="form_textarea"></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Kontakta mig via</legend>
-                <label for="form_mail">Mail</label>
-                <input id="form_mail" name="contact_options[]" value="mail" type="checkbox">
-                <br>
-                <label for="form_phone">Telefon</label>
-                <input id="form_phone" name="contact_options[]" value="phone" type="checkbox">
-            </fieldset>
-            <input type="submit">
-        </form>
-        </div>
-            <div class="footer">
-            <p>Ansvarig för innehållet på denna sida är Fabian Gillholm</p>
+        <div id="wrapper">
+            <div id="header">
+                <h1>Kontakt</h1>
+            </div>
+            <div id="leftNavigation">
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="laborationer.html">Laborationer</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                    <fieldset>
+                        <legend>Fråga</legend>
+                        <label for="form_select">Ärendetyp</label>
+                        <select name="form_reason" id="form_select">
+                            <option>Fråga</option>
+                            <option>Kärleksförklaring</option>
+                        </select>
+                        <br>
+                        <label for="form_text">Rubrik:</label>
+                        <input name="form_subject" id="form_text" type="text">
+                        <br>
+                        <label for="form_textarea">Fråga:</label>
+                        <textarea name="form_textarea" id="form_textarea"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Kontakta mig via</legend>
+                        <label for="form_mail">Mail</label>
+                        <input id="form_mail" name="contact_options[]" value="mail" type="checkbox">
+                        <br>
+                        <label for="form_phone">Telefon</label>
+                        <input id="form_phone" name="contact_options[]" value="phone" type="checkbox">
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="footer">
+                <p>Ansvarig för innehållet på denna sida är Fabian Gillholm</p>
             </div>
         </div>
     </body>
