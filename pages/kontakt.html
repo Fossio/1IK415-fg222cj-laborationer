@@ -6,19 +6,19 @@
         <link href="../css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <div id="wrapper">
-        <div id="header">
+    <div class="wrapper">
+        <div class="header">
         <h1>Kontakt</h1>
         </div>
-        <div id="leftNavigation">
+        <div class="leftNavigation">
         <ul>
             <li><a href="../index.html">Start</a></li>
             <li><a href="laborationer.html">Laborationer</a></li>
             <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="kontakt.html" id="active">Kontakt</a></li>
         </ul>
         </div>
-        <div id="main">
+        <div class="main">
         <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
             <fieldset>
                 <legend>Fråga</legend>
@@ -28,24 +28,24 @@
                     <option>Kärleksförklaring</option>
                 </select>
                 <br>
-                <label for="form_text">Rubrik:</label>
+                <label for="form_text">Rubrik</label>
                 <input name="form_subject" id="form_text" type="text">
                 <br>
-                <label for="form_textarea">Fråga:</label>
+                <label for="form_textarea">Fråga</label>
                 <textarea name="form_textarea" id="form_textarea"></textarea>
             </fieldset>
             <fieldset>
-                <legend>Information om dig</legend>
-                <label for="form_mail">Kontakta mig via mail</label>
+                <legend>Kontakta mig via</legend>
+                <label for="form_mail">Mail</label>
                 <input id="form_mail" name="contact_options[]" value="mail" type="checkbox">
                 <br>
-                <label for="form_phone">Kontakta mig via telefon</label>
+                <label for="form_phone">Telefon</label>
                 <input id="form_phone" name="contact_options[]" value="phone" type="checkbox">
             </fieldset>
             <input type="submit">
         </form>
         </div>
-            <div id="footer">
+            <div class="footer">
             <p>Ansvarig för innehållet på denna sida är Fabian Gillholm</p>
             </div>
         </div>

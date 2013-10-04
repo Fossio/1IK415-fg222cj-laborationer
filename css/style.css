@@ -129,16 +129,40 @@ tfoot td {
     font-style:italic;
 }
 
+input, select, textarea {
+    display:block;
+}
+
+textarea {
+    width:300px;
+    height:150px;
+}
+
+#form_text {
+    width:300px;
+}
+
+#form_mail, #form_phone {
+    display:inline;
+}
+
+label {
+    margin-left:2px;
+}
+
+#form_mail {
+    margin-left:30px;
+}
 
 /* Divar */
 
 
-#wrapper {
+.wrapper {
     width:1000px;
     margin:0 auto;
 }
 
-#header {
+.header {
     width:1000px;
     height:219px;
     text-align:center;
@@ -146,50 +170,50 @@ tfoot td {
     background-image:url('pics/BadlyDrawnPigExtended.png');
 }
 
-#header h1 strong {
+.header h1 strong {
     font-size:34px;
 }
 
-#header p {
+.header p {
     position:relative;
     top:50px;
 }
 
-#leftNavigation {
+.leftNavigation {
     float:left;
     background-color:#7DFF68;
     height:100%;
     width:19%;
 }
 
-#leftNavigation ul li a{
+.leftNavigation ul li a{
     background-color:#7DFF68;
     text-indent:5px;
     line-height:2;
     display:block;
 }
 
-#leftNavigation ul li a:hover{
+.leftNavigation ul li a:hover{
     background-color:#D1FF68;
 }
 
-#main {
+.main {
     padding:10px;
     float:right;
     width:79%;
     background-color:#C7E8FF;
 }
 
-#footer {
+.footer {
     width:1000px;
     height:50px;
     text-align:center;
     vertical-align:bottom;
-    float:left;
+    clear:both;
     background-color:#E8C053;
 }
 
-#footer p {
+.footer p {
     position:relative;
     top:8px;
 }
@@ -201,7 +225,7 @@ tfoot td {
     text-indent:28px;
 }
 
-.active {
+#active {
     background-color:#D1FF68;
 }
 
