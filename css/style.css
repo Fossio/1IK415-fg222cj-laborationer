@@ -183,13 +183,14 @@ label {
     float:left;
     background-color:#7DFF68;
     height:100%;
-    width:19%;
+    width:23%;
 }
 
 .leftNavigation ul li a{
+    padding-left:24px;
     background-color:#7DFF68;
     text-indent:5px;
-    line-height:2;
+    height:24px;
     display:block;
 }
 
@@ -197,10 +198,54 @@ label {
     background-color:#D1FF68;
 }
 
+.leftNavigation ul li a.active {
+    background-color:#D1FF68;
+}
+
+#start {
+    background-image:url('pics/sprite.png');
+    background-position:0 0;
+    background-repeat:no-repeat;
+}
+
+#start:hover {
+    background-position:0 -48px;
+}
+
+#lab {
+    background-image:url('pics/sprite.png');
+    background-position:0 -96px;
+    background-repeat:no-repeat;
+}
+
+#lab:hover {
+    background-position:0 -144px;
+}
+
+#presentation {
+    background-image:url('pics/sprite.png');
+    background-position:0 -192px;
+    background-repeat:no-repeat;
+}
+
+#presentation:hover {
+    background-position:0 -240px;
+}
+
+#contact {
+    background-image:url('pics/sprite.png');
+    background-position:0 -288px;
+    background-repeat:no-repeat;
+}
+
+#contact:hover {
+    background-position:0 -336px;
+}
+
 .main {
     padding:10px;
     float:right;
-    width:79%;
+    width:75%;
     background-color:#C7E8FF;
 }
 
@@ -223,10 +268,6 @@ label {
     background-repeat:no-repeat;
     background-position:left center;
     text-indent:28px;
-}
-
-#active {
-    background-color:#D1FF68;
 }
 
 .signature {
