@@ -171,7 +171,6 @@ label {
     height:219px;
     text-align:center;
     text-transform:uppercase;
-    background-image:url('pics/BadlyDrawnPigExtended.png');
 }
 
 .header h1 strong {
@@ -191,7 +190,6 @@ label {
     padding:10px;
     float:right;
     width:79%;
-    background-color:#C7E8FF;
 }
 
 .footer {
@@ -200,7 +198,6 @@ label {
     text-align:center;
     vertical-align:bottom;
     clear:both;
-    background-color:#E8C053;
 }
 
 .footer p {
