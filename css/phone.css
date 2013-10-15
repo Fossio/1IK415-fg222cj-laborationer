@@ -58,6 +58,9 @@ table {
 
 /* End of reset */
 
+img, video {
+    max-width:100%;
+}
 
 /* Länkar */
 
