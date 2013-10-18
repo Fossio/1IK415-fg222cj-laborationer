@@ -167,37 +167,38 @@ label {
     margin:0 auto;
 }
 
-.header {
+Header {
     width:100%;
     text-align:center;
     text-transform:uppercase;
 }
 
-.header h1 strong {
+Header h1 strong {
     font-size:34px;
 }
 
 
 
-.leftNavigation {
+Nav {
+    display:none;
     background-color:#7DFF68;
     height:100%;
     width:100%;
 }
 
-.leftNavigation ul li a{
+Nav ul li a{
     padding-left:24px;
     background-color:#7DFF68;
     text-indent:5px;
     height:35px;
-    display:block;
+    display:none;
 }
 
-.leftNavigation ul li a:hover{
+Nav ul li a:hover{
     background-color:#D1FF68;
 }
 
-.leftNavigation ul li a.active {
+Nav ul li a.active {
     background-color:#D1FF68;
 }
 
@@ -225,67 +226,4 @@ label {
     background-image:url('pics/sprite.png');
     background-position:0 -192px;
     background-repeat:no-repeat;
-}
-
-#presentation:hover {
-    background-position:0 -240px;
-}
-
-#contact {
-    background-image:url('pics/sprite.png');
-    background-position:0 -288px;
-    background-repeat:no-repeat;
-}
-
-#contact:hover {
-    background-position:0 -336px;
-}
-
-.main {
-    width:100%;
-    background-color:#C7E8FF;
-}
-
-.footer {
-    width:100%;
-    height:50px;
-    text-align:center;
-    vertical-align:bottom;
-    clear:both;
-    background-color:#E8C053;
-}
-
-.footer p {
-    position:relative;
-    top:8px;
-}
-
-.blog-heading {
-    background-image:url('pics/scroll.png'); /* This image is used with permission. The rights to this image belong to Everaldo Coelho - http://www.everaldo.com/ */
-    background-repeat:no-repeat;
-    background-position:left center;
-    text-indent:28px;
-}
-
-.signature {
-    font-style:italic;
-    margin:20px;
-}
-
-.right {
-    float:right;
-}
-
-.left {
-    float: left;
-}
-
-.image-border {
-    border: 3px solid white;
-}
-
-#image_star {
-    width:100%;
-    max-width:300px;
-    height:auto;
 }

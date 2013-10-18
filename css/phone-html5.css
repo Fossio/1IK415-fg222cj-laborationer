@@ -167,25 +167,25 @@ label {
     margin:0 auto;
 }
 
-.header {
+Header {
     width:100%;
     text-align:center;
     text-transform:uppercase;
 }
 
-.header h1 strong {
+Header h1 strong {
     font-size:34px;
 }
 
 
 
-.leftNavigation {
+Nav {
     background-color:#7DFF68;
     height:100%;
     width:100%;
 }
 
-.leftNavigation ul li a{
+Nav ul li a{
     padding-left:24px;
     background-color:#7DFF68;
     text-indent:5px;
@@ -193,11 +193,11 @@ label {
     display:block;
 }
 
-.leftNavigation ul li a:hover{
+Nav ul li a:hover{
     background-color:#D1FF68;
 }
 
-.leftNavigation ul li a.active {
+Nav ul li a.active {
     background-color:#D1FF68;
 }
 
@@ -241,12 +241,12 @@ label {
     background-position:0 -336px;
 }
 
-.main {
+Main {
     width:100%;
     background-color:#C7E8FF;
 }
 
-.footer {
+Footer {
     width:100%;
     height:50px;
     text-align:center;
@@ -255,7 +255,7 @@ label {
     background-color:#E8C053;
 }
 
-.footer p {
+Footer p {
     position:relative;
     top:8px;
 }

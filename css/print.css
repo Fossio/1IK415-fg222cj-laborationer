@@ -22,6 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	word-wrap:break-word;
+	
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -32,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	overflow-y:scroll;
+	overflow-x:hidden;
 }
 
 ol, ul {
@@ -55,15 +59,14 @@ table {
 
 /* End of reset */
 
+img, video {
+    max-width:100%;
+}
 
 /* Länkar */
 
 a {
     text-decoration:none;
-}
-
-.main a:link:after {
-    content: " (" attr(href) ") ";
 }
 
 a:visited {
@@ -78,7 +81,7 @@ a:hover {
 /* Allmänt */
 
 a, p, dt, dd, li, td, label {
-    font:12pt "Trebuchet MS";
+    font:16px "Trebuchet MS";
 }
 
 p {
@@ -87,8 +90,6 @@ p {
 
 /* Rubriker */
 h1 {
-    position:relative;
-    top:50px;
     font:bold 24px Georgia;
 }
 
@@ -162,13 +163,12 @@ label {
 
 
 .wrapper {
-    width:1000px;
+    width:100%;
     margin:0 auto;
 }
 
 .header {
-    width:1000px;
-    height:219px;
+    width:100%;
     text-align:center;
     text-transform:uppercase;
 }
@@ -177,58 +177,52 @@ label {
     font-size:34px;
 }
 
-.header p {
-    position:relative;
-    top:50px;
-}
+
 
 .leftNavigation {
-    display:none;
+    background-color:#7DFF68;
+    height:100%;
+    width:100%;
 }
 
-.main {
-    padding:10px;
-    float:right;
-    width:79%;
+.leftNavigation ul li a{
+    padding-left:24px;
+    background-color:#7DFF68;
+    text-indent:5px;
+    height:35px;
+    display:block;
 }
 
-.footer {
-    width:1000px;
-    height:50px;
-    text-align:center;
-    vertical-align:bottom;
-    clear:both;
-}
-
-.footer p {
-    position:relative;
-    top:8px;
-}
-
-.blog-heading {
-    background-image:url('pics/scroll.png'); /* This image is used with permission. The rights to this image belong to Everaldo Coelho - http://www.everaldo.com/ */
-    background-repeat:no-repeat;
-    background-position:left center;
-    text-indent:28px;
-}
-
-#active {
+.leftNavigation ul li a:hover{
     background-color:#D1FF68;
 }
 
-.signature {
-    font-style:italic;
-    margin:20px;
+.leftNavigation ul li a.active {
+    background-color:#D1FF68;
 }
 
-.right {
-    float:right;
+#start {
+    background-image:url('pics/sprite.png');
+    background-position:0 0;
+    background-repeat:no-repeat;
 }
 
-.left {
-    float: left;
+#start:hover {
+    background-position:0 -48px;
 }
 
-.image-border {
-    border: 3px solid white;
+#lab {
+    background-image:url('pics/sprite.png');
+    background-position:0 -96px;
+    background-repeat:no-repeat;
+}
+
+#lab:hover {
+    background-position:0 -144px;
+}
+
+#presentation {
+    background-image:url('pics/sprite.png');
+    background-position:0 -192px;
+    background-repeat:no-repeat;
 }
