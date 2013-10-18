@@ -138,6 +138,10 @@ textarea {
     height:150px;
 }
 
+form {
+    float:left;
+}
+
 #form_text {
     width:300px;
 }
@@ -247,6 +251,11 @@ label {
     float:right;
     width:75%;
     background-color:#C7E8FF;
+}
+
+Aside {
+    float:right;
+    margin-top:20px;
 }
 
 .footer {
